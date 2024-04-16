@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MiniOBSModelStoreContainer" CdmEntityContainer="MiniOBSEntities">
+    <EntitySetMapping Name="Ders">
+      <EntityTypeMapping TypeName="MiniOBSModel.Ders">
+        <MappingFragment StoreEntitySet="Ders">
+          <ScalarProperty Name="DersID" ColumnName="DersID" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenci">
+      <EntityTypeMapping TypeName="MiniOBSModel.Ogrenci">
+        <MappingFragment StoreEntitySet="Ogrenci">
+          <ScalarProperty Name="OgrenciID" ColumnName="OgrenciID" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="SinifId" ColumnName="SinifId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciDers">
+      <EntityTypeMapping TypeName="MiniOBSModel.OgrenciDers">
+        <MappingFragment StoreEntitySet="OgrenciDers">
+          <ScalarProperty Name="OgrenciDersID" ColumnName="OgrenciDersID" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciNot">
+      <EntityTypeMapping TypeName="MiniOBSModel.OgrenciNot">
+        <MappingFragment StoreEntitySet="OgrenciNot">
+          <ScalarProperty Name="OgrenciNotID" ColumnName="OgrenciNotID" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="SinavTuru" ColumnName="SinavTuru" />
+          <ScalarProperty Name="SinavNotu" ColumnName="SinavNotu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sinif">
+      <EntityTypeMapping TypeName="MiniOBSModel.Sinif">
+        <MappingFragment StoreEntitySet="Sinif">
+          <ScalarProperty Name="SinifID" ColumnName="SinifID" />
+          <ScalarProperty Name="SinifAd" ColumnName="SinifAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MiniOBSModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vOgrenci">
+      <EntityTypeMapping TypeName="MiniOBSModel.vOgrenci">
+        <MappingFragment StoreEntitySet="vOgrenci">
+          <ScalarProperty Name="SinifAd" ColumnName="SinifAd" />
+          <ScalarProperty Name="SinifId" ColumnName="SinifId" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="OgrenciID" ColumnName="OgrenciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vOgrenciDers">
+      <EntityTypeMapping TypeName="MiniOBSModel.vOgrenciDers">
+        <MappingFragment StoreEntitySet="vOgrenciDers">
+          <ScalarProperty Name="SinifAd" ColumnName="SinifAd" />
+          <ScalarProperty Name="SinifId" ColumnName="SinifId" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OgrenciDersID" ColumnName="OgrenciDersID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vOgrenciNot">
+      <EntityTypeMapping TypeName="MiniOBSModel.vOgrenciNot">
+        <MappingFragment StoreEntitySet="vOgrenciNot">
+          <ScalarProperty Name="SinavNotu" ColumnName="SinavNotu" />
+          <ScalarProperty Name="SinavTuru" ColumnName="SinavTuru" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OgrenciNotID" ColumnName="OgrenciNotID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
